@@ -5,16 +5,10 @@ import { GrantModule } from './grant/grant.module';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './common/header/header.component';
-import { FooterComponent } from './common/footer/footer.component';
 import { CloudsComponent } from './common/clouds/clouds.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    FooterComponent,
-    CloudsComponent,
-  ],
+  declarations: [AppComponent, HeaderComponent, CloudsComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],
