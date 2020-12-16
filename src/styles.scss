@@ -22,13 +22,6 @@ p {
   margin: 0;
 }
 
-button {
-  cursor: pointer;
-  position: absolute;
-  right: 0;
-  margin-right: 20px;
-}
-
 .spacer {
   flex: 1;
 }
@@ -218,13 +211,6 @@ a:hover {
 .circle-link:hover {
   transform: translateY(-0.25rem);
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
-}
-
-footer {
-  margin-top: 8px;
-  display: flex;
-  align-items: center;
-  line-height: 20px;
 }
 
 footer a {
