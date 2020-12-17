@@ -58,6 +58,21 @@ Karma lets us run Jasmine tests as part of a development tool chain which requir
 
 ![Package Screenshot](src/assets/images/package-screenshot.png)
 
+## Karma Configuration File
+
+![Karma Config](src/assets/images/karma-config.png)
+
+- Frameworks - This is where we set Jasmine as our testing framework.
+
+- Reporters - Where you set the reporters.
+
+- autoWatch - set to true, the tests run in watch mode. This means, if you change any test and save the file the tests are re-build and re-run
+
+- Browsers - this is where you set the browser where the test should run. By default it is chrome. 
+
+
+
+
 ## Authors
 
 [Joel Machango](https://joelmachango.com/)
