@@ -86,6 +86,35 @@ What's happening:
 
 ## AppComponent Tests
 
+![AppCommponent tests](src/assets/images/app-component.png)
+
+- Import all the angular testing tools that we are going to use.
+- Import all the dependencies that this component has.
+- Use a **describe** to start our test block
+- Use an **async before each**. The purpose of the async is to let all the possible asynchronous code to finish before continuing.
+
+Before running any test in angular you need to configure an angular testbed.
+
+It allows you to create an angular environment for the component being tested. Any module, component or service that your tested component needs have to be included in the testbed.
+
+After setting the configuration, we call the compile components function.
+
+- ### In the first test, we are checking that the component contains the expected text in the `title` property.
+
+First, we create an instance of the app.component, using the create component function of the angular testbed. 
+
+This gives us a fixture object that is going to allows us to create an instance of that component.
+
+Now that we have an instance of app.component we can check the value in the text property an make jasmine expect to be equal to the expected value.
+
+- ### The second test checks that the DOM renders the `text` property.
+
+It gets the app.component fixture, executes the detect changes function which applies component changes to the HTML, applying interpolation.
+
+Then it gets the native element of the compiled HTML - HTML rendered by the component.
+
+Finally, we select the `h1` containing the `text` value and expect that the selected HTML contains the expected value.
+
 ## Authors
 
 [Joel Machango](https://joelmachango.com/)
