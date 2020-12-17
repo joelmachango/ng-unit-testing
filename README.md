@@ -68,10 +68,21 @@ Karma lets us run Jasmine tests as part of a development tool chain which requir
 
 - autoWatch - set to true, the tests run in watch mode. This means, if you change any test and save the file the tests are re-build and re-run
 
-- Browsers - this is where you set the browser where the test should run. By default it is chrome. 
+- Browsers - this is where you set the browser where the test should run. By default it is chrome.
 
+## Test Entry File
 
+The angular-cli configuration of karma uses the file “test.ts” as the entry point of the tests for the application.
 
+![Karma Config](src/assets/images/test-entry.png)
+
+What's happening:
+
+- An environment to run angular tests is being created using all the imports at the beginning of the file.
+
+- TestBed is a powerful unit testing tool provided by angular, and it is initialized in this file.
+
+- Karma loads all the test files of the application matching their names against a regular expression. All files inside our app folder that has “spec.ts” on its name are considered a test.
 
 ## Authors
 
