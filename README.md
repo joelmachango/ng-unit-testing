@@ -117,7 +117,7 @@ Finally, we select the `h1` containing the `text` value and expect that the sele
 
 ## Create Grant Form - Tests
 
-![GrantAddCommponent tests](src/assets/images/app-component.png)
+![GrantAddCommponent tests](src/assets/images/add-grant-tests.png)
 
 - Import angular testing tools and introduce “By” which allows us to select elements from the DOM.
 - Declare the tests block using describe
@@ -132,6 +132,18 @@ Finally, we select the `h1` containing the `text` value and expect that the sele
   Before all of this, we create a jasmine “spy” on the “onSubmit” function of the component.
 
   Finally, we expect that the spied function is not executed, because the button should be disabled since the form is not valid.
+
+## Grants List Service - Tests
+
+![GrantAddCommponent tests](src/assets/images/grant-list.png)
+
+- When testing a component with services, we need to add the providers to the testing module created in the “beforeEach”.
+- We will be using a mocked version of the services.
+- Please note the provider’s declaration of the test module.
+
+We are telling the module that when the service “GrantService” is injected it should use the “GrantServiceMock” instead. 
+
+The “GrantServiceMock” is a dummy service that we created that returns dummy data to run the tests of the component. 
 
 ## Author
 
