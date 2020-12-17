@@ -9,7 +9,7 @@ import { CloudsComponent } from './common/clouds/clouds.component';
 
 @NgModule({
   declarations: [AppComponent, HeaderComponent, CloudsComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule, GrantModule],
   providers: [],
   bootstrap: [AppComponent],
 })
