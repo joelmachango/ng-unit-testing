@@ -48,8 +48,8 @@ describe('GrantAddComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it(`should have as text 'contact page'`, async(() => {
-    expect(component.text).toEqual('contact page');
+  it(`should have as text 'add grant page'`, async(() => {
+    expect(component.text).toEqual('add grant page');
   }));
 
   it(`should set submitted to true`, async(() => {
@@ -58,17 +58,17 @@ describe('GrantAddComponent', () => {
   }));
 
   it(`form should be invalid`, async(() => {
-    component.contactForm.controls['email'].setValue('');
-    component.contactForm.controls['name'].setValue('');
-    component.contactForm.controls['text'].setValue('');
-    expect(component.contactForm.valid).toBeFalsy();
+    component.grantForm.controls['grantor'].setValue('');
+    component.grantForm.controls['name'].setValue('');
+    component.grantForm.controls['amount'].setValue('');
+    expect(component.grantForm.valid).toBeFalsy();
   }));
 
   it(`form should be valid`, async(() => {
-    component.contactForm.controls['email'].setValue('asd@asd.com');
-    component.contactForm.controls['name'].setValue('aada');
-    component.contactForm.controls['text'].setValue('text');
-    expect(component.contactForm.valid).toBeTruthy();
+    component.grantForm.controls['grantor'].setValue('USAID');
+    component.grantForm.controls['name'].setValue('aada');
+    component.grantForm.controls['amount'].setValue(10000);
+    expect(component.grantForm.valid).toBeTruthy();
   }));
 
   // it(`should call the onSubmit method`, async(() => {

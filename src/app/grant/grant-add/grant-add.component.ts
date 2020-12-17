@@ -7,30 +7,30 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
   styleUrls: ['./grant-add.component.scss'],
 })
 export class GrantAddComponent implements OnInit {
-  text = 'contact page';
-  contactForm: FormGroup;
-  contact = {
+  text = 'add grant page';
+  grantForm: FormGroup;
+  grant = {
     name: '',
-    email: '',
-    text: '',
+    grantor: '',
+    amount: '',
   };
   submitted = false;
 
   constructor() {
     this.createForm();
   }
-  // The contact form has three controls with their validations.
+  // The grant form has three controls with their validations.
   createForm(): void {
-    this.contactForm = new FormGroup({
-      name: new FormControl(this.contact.name, [
+    this.grantForm = new FormGroup({
+      name: new FormControl(this.grant.name, [
         Validators.required,
         Validators.minLength(4),
       ]),
-      email: new FormControl(this.contact.email, [
+      grantor: new FormControl(this.grant.grantor, [
         Validators.required,
-        Validators.email,
+        Validators.minLength(4),
       ]),
-      text: new FormControl(this.contact.text, Validators.required),
+      amount: new FormControl(this.grant.amount, Validators.required),
     });
   }
 
