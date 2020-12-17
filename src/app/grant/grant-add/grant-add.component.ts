@@ -19,7 +19,7 @@ export class GrantAddComponent implements OnInit {
   constructor() {
     this.createForm();
   }
-
+  // The contact form has three controls with their validations.
   createForm(): void {
     this.contactForm = new FormGroup({
       name: new FormControl(this.contact.name, [
@@ -34,6 +34,7 @@ export class GrantAddComponent implements OnInit {
     });
   }
 
+  // changes the submitted property to true
   onSubmit(): void {
     this.submitted = true;
   }

@@ -115,7 +115,25 @@ Then it gets the native element of the compiled HTML - HTML rendered by the comp
 
 Finally, we select the `h1` containing the `text` value and expect that the selected HTML contains the expected value.
 
-## Authors
+## Create Grant Form - Tests
+
+![GrantAddCommponent tests](src/assets/images/app-component.png)
+
+- Import angular testing tools and introduce “By” which allows us to select elements from the DOM.
+- Declare the tests block using describe
+- Set all the needed dependencies to start the test module.
+- We'll use the promise that the “compileComponents” function returns. When the promise is resolved we give a value to each of the variables that we declare at the beginning.
+- First test expects the component to be initialized.
+- Second test expects the component instance has the expected value of the “text” property.
+- Third test expects the property of the component “submitted” to be true when the “onSubmit” function is called.
+- The fourth and fifth tests check form validity. When invalid values are added we expect the form valid property to be false and vice versa.
+- The last test applies the component state to the HTML with the function “detectChanges” of the “fixture” object then it gets the submit button from the DOM and trigger the click event.
+
+  Before all of this, we create a jasmine “spy” on the “onSubmit” function of the component.
+
+  Finally, we expect that the spied function is not executed, because the button should be disabled since the form is not valid.
+
+## Author
 
 [Joel Machango](https://joelmachango.com/)
 
@@ -126,6 +144,8 @@ MIT
 ## Acknowledgement & References
 
 [Santiago García da Rosa](https://medium.com/swlh/angular-unit-testing-jasmine-karma-step-by-step-e3376d110ab4)
+
+[Lars Bilde](https://www.youtube.com/playlist?list=PL8jcXf-CLpxolmjV5_taFP0c5LyCveDF1)
 
 [Angular.io](https://angular.io/guide/testing)
 

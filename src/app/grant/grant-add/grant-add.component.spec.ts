@@ -23,7 +23,9 @@ describe('GrantAddComponent', () => {
       .then(() => {
         fixture = TestBed.createComponent(GrantAddComponent);
 
-        component = fixture.componentInstance; // ContactComponent test instance
+        // GrantAddComponent test instance
+        component = fixture.componentInstance;
+
         // query for the title <h1> by CSS element selector
         de = fixture.debugElement.query(By.css('form'));
         el = de.nativeElement;
@@ -55,13 +57,6 @@ describe('GrantAddComponent', () => {
     expect(component.submitted).toBeTruthy();
   }));
 
-  // it(`should call the onSubmit method`, async(() => {
-  //   spyOn(component, 'onSubmit');
-  //   el = fixture.debugElement.query(By.css('button')).nativeElement;
-  //   el.click();
-  //   expect(component.onSubmit).toHaveBeenCalled();
-  // }));
-
   it(`form should be invalid`, async(() => {
     component.contactForm.controls['email'].setValue('');
     component.contactForm.controls['name'].setValue('');
@@ -75,4 +70,11 @@ describe('GrantAddComponent', () => {
     component.contactForm.controls['text'].setValue('text');
     expect(component.contactForm.valid).toBeTruthy();
   }));
+
+  // it(`should call the onSubmit method`, async(() => {
+  //   spyOn(component, 'onSubmit');
+  //   el = fixture.debugElement.query(By.css('button')).nativeElement;
+  //   el.click();
+  //   expect(component.onSubmit).toHaveBeenCalled();
+  // }));
 });
