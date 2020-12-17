@@ -127,11 +127,6 @@ Finally, we select the `h1` containing the `text` value and expect that the sele
 - Second test expects the component instance has the expected value of the “text” property.
 - Third test expects the property of the component “submitted” to be true when the “onSubmit” function is called.
 - The fourth and fifth tests check form validity. When invalid values are added we expect the form valid property to be false and vice versa.
-- The last test applies the component state to the HTML with the function “detectChanges” of the “fixture” object then it gets the submit button from the DOM and trigger the click event.
-
-  Before all of this, we create a jasmine “spy” on the “onSubmit” function of the component.
-
-  Finally, we expect that the spied function is not executed, because the button should be disabled since the form is not valid.
 
 ## Grants List Service - Tests
 
@@ -141,9 +136,9 @@ Finally, we select the `h1` containing the `text` value and expect that the sele
 - We will be using a mocked version of the services.
 - Please note the provider’s declaration of the test module.
 
-We are telling the module that when the service “GrantService” is injected it should use the “GrantServiceMock” instead. 
+We are telling the module that when the service “GrantService” is injected it should use the “GrantServiceMock” instead.
 
-The “GrantServiceMock” is a dummy service that we created that returns dummy data to run the tests of the component. 
+The “GrantServiceMock” is a dummy service that we created that returns dummy data to run the tests of the component.
 
 ## Author
 

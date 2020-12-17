@@ -32,18 +32,6 @@ describe('GrantAddComponent', () => {
       });
   }));
 
-  // beforeEach(async () => {
-  //   await TestBed.configureTestingModule({
-  //     declarations: [GrantAddComponent],
-  //   }).compileComponents();
-  // });
-
-  // beforeEach(() => {
-  //   fixture = TestBed.createComponent(GrantAddComponent);
-  //   component = fixture.componentInstance;
-  //   fixture.detectChanges();
-  // });
-
   it('should create', () => {
     expect(component).toBeTruthy();
   });
@@ -71,10 +59,5 @@ describe('GrantAddComponent', () => {
     expect(component.grantForm.valid).toBeTruthy();
   }));
 
-  // it(`should call the onSubmit method`, async(() => {
-  //   spyOn(component, 'onSubmit');
-  //   el = fixture.debugElement.query(By.css('button')).nativeElement;
-  //   el.click();
-  //   expect(component.onSubmit).toHaveBeenCalled();
-  // }));
+  // should call the onSubmit method
 });

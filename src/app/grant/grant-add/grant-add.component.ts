@@ -19,7 +19,7 @@ export class GrantAddComponent implements OnInit {
   constructor() {
     this.createForm();
   }
-  // The grant form has three controls with their validations.
+  // The grant form controls with their validations.
   createForm(): void {
     this.grantForm = new FormGroup({
       name: new FormControl(this.grant.name, [
