@@ -29,3 +29,19 @@ Unit tests are a kind of living documentation of the product. To learn what func
 Code covered with tests is more reliable than the code without. If a future change breaks something in the code, developers will be able to identify the root of the problem right away rather than coming through the whole system to find the issue
 
 **_Saying these benefits come at the cost of TIME is not true. You'll find that time spent creating unit tests is relatively small compared to time spent resolving bugs later (when you are introducing new features or making any refactors.) without tests._**
+
+## Authors
+[Joel Machango](https://joelmachango.com/)
+
+## License
+MIT
+
+## Acknowledgement & References
+[Santiago García da Rosa](https://medium.com/swlh/angular-unit-testing-jasmine-karma-step-by-step-e3376d110ab4)
+
+[Angular.io](https://angular.io/guide/testing)
+
+[Fireship.io](https://fireship.io/lessons/angular-testing-guide-including-firebase)
+
+
+
