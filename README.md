@@ -84,6 +84,8 @@ What's happening:
 
 - Karma loads all the test files of the application matching their names against a regular expression. All files inside our app folder that has “spec.ts” on its name are considered a test.
 
+## AppComponent Tests
+
 ## Authors
 
 [Joel Machango](https://joelmachango.com/)
