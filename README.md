@@ -30,18 +30,34 @@ Code covered with tests is more reliable than the code without. If a future chan
 
 **_Saying these benefits come at the cost of TIME is not true. You'll find that time spent creating unit tests is relatively small compared to time spent resolving bugs later (when you are introducing new features or making any refactors.) without tests._**
 
+![Karma & Jasmine](src/assets/images/karma-jasmine.png)
+
+# [Jasmine ](https://jasmine.github.io/)
+
+Jasmine is a behavior-driven development framework for testing JavaScript code. It does not depend on any other JavaScript frameworks. It does not require a DOM. And it has a clean, obvious syntax so that you can easily write tests.
+
+It attempts to describe tests in a human readable format so that non-technical people can understand what is being tested.
+
+# [Karma](http://karma-runner.github.io/latest/index.html)
+
+Karma is a tool which lets us spawn browsers and run Jasmine tests inside of them all from the command line. The results of the tests are also displayed on the command line.
+
+Karma can also watch your development files for changes and re-run the tests automatically.
+
+Karma lets us run Jasmine tests as part of a development tool chain which requires tests to be runnable and results inspectable via the command line.
+
 ## Authors
+
 [Joel Machango](https://joelmachango.com/)
 
 ## License
+
 MIT
 
 ## Acknowledgement & References
+
 [Santiago García da Rosa](https://medium.com/swlh/angular-unit-testing-jasmine-karma-step-by-step-e3376d110ab4)
 
 [Angular.io](https://angular.io/guide/testing)
 
 [Fireship.io](https://fireship.io/lessons/angular-testing-guide-including-firebase)
-
-
-
