@@ -99,15 +99,15 @@ It allows you to create an angular environment for the component being tested. A
 
 After setting the configuration, we call the compile components function.
 
-- ### In the first test, we are checking that the component contains the expected text in the `title` property.
+- ### In the first test, we are checking that the component contains the expected text in the "title" property.
 
-First, we create an instance of the app.component, using the create component function of the angular testbed. 
+First, we create an instance of the app.component, using the create component function of the angular testbed.
 
 This gives us a fixture object that is going to allows us to create an instance of that component.
 
 Now that we have an instance of app.component we can check the value in the text property an make jasmine expect to be equal to the expected value.
 
-- ### The second test checks that the DOM renders the `text` property.
+- ### The second test checks that the DOM renders the "text" property.
 
 It gets the app.component fixture, executes the detect changes function which applies component changes to the HTML, applying interpolation.
 
