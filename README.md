@@ -38,9 +38,13 @@ Jasmine is a behavior-driven development framework for testing JavaScript code. 
 
 It attempts to describe tests in a human readable format so that non-technical people can understand what is being tested.
 
+It's the framework we are going to use to create our tests. It has a bunch of functionalities to allow us the write different kinds of tests.
+
 # [Karma](http://karma-runner.github.io/latest/index.html)
 
-Karma is a tool which lets us spawn browsers and run Jasmine tests inside of them all from the command line. The results of the tests are also displayed on the command line.
+Karma is a task runner for our tests.
+
+It is a tool which lets us spawn browsers and run Jasmine tests inside of them all from the command line. The results of the tests are also displayed on the command line.
 
 Karma can also watch your development files for changes and re-run the tests automatically.
 
