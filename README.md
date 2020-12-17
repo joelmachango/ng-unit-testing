@@ -46,6 +46,13 @@ Karma can also watch your development files for changes and re-run the tests aut
 
 Karma lets us run Jasmine tests as part of a development tool chain which requires tests to be runnable and results inspectable via the command line.
 
+### When you create an Angular Project using the CLI all the dependencies get installed among them everything you are going to need to create the tests.
+
+`npm install -g @angular/cli`
+
+`nng new ng-unit-testing`
+
+
 ## Authors
 
 [Joel Machango](https://joelmachango.com/)
